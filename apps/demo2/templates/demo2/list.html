@@ -1,0 +1,22 @@
+<table class="table table-striped">
+        <thead class='thead-light'>
+            <tr>
+                <th scope='col'>First Name</th>
+                <th scope='col'>Last Name</th>
+                <th scope='col'>Email</th>
+                <th scope='col'>Created At</th>
+                <th scope='col'>Updated At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in users %}
+            <tr>
+                <th scope='row'>{{i.first_name}}</th>
+                <td>{{i.last_name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.created_at}}</td>
+                <td>{{i.updated_at}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
